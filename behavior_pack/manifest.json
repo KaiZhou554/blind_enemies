@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Blind Enemies",
+    "description": "ONLY FOR MCBE V26 https://github.com/KaiZhou554/blind_enemies",
+    "uuid": "dbb04155-d617-490e-ac0e-e3cf42c96cc4",
+    "version": [26, 0, 17],
+    "min_engine_version": [1, 26, 0]
+  },
+  "modules": [
+    {
+      "description": "They won't attack you!",
+      "type": "data",
+      "uuid": "57ac202c-e835-4878-9fa6-6cc768039c27",
+      "version": [0, 0, 1]
+    }
+  ]
+}
