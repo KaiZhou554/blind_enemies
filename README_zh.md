@@ -1,6 +1,13 @@
-# Blind Enemies
+# 盲敌成友 Blind Enemies
 
 [English](README.md) | 简体中文
+
+> 版本 26.1.9 更新内容
+> 
+> 此版本需要在「编辑世界 → 实验性游戏内容」中开启测试版API才会生效。
+> 
+> - 嘎枝（Creaking）不再攻击玩家
+> - 烈焰人（Blaze）不再有小概率对玩家产生敌意
 
 **Blind Enemies** 是一个 Minecraft 基岩版（Bedrock Edition）Addon，用于让绝大多数敌对生物对玩家变为友好。
 
@@ -28,11 +35,6 @@
 
 - **末影龙**
 - **凋灵**
-
-此外：
-
-- **嘎枝（Creaking）** 暂未修改，这是由于游戏本身的一个 Bug，导致其行为无法正常调整。
-
 
 ## 使用场景
 

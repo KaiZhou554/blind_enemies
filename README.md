@@ -2,6 +2,13 @@
 
 English | [简体中文](README_zh.md)
 
+> What's new in version 26.1.9
+> 
+> This version requires turning on Beta APIs in Edit World → Experiments to take effect.
+> 
+> - Creaking no longer attacks players
+> - Blaze no longer has a small chance of becoming hostile toward players
+
 **Blind Enemies** is a Minecraft Bedrock Edition addon that makes most hostile mobs friendly toward players.
 
 Hostile mobs will no longer attack players, and even if players attack them first, they will usually not retaliate.  
@@ -27,10 +34,6 @@ Some mobs are intentionally **not modified**:
 
 - **Ender Dragon** 
 - **Wither** 
-
-Additionally:
-
-- **Creaking** is currently not modified due to a bug in the base game that prevents proper behavior changes.
 
 ## Use Cases
 
