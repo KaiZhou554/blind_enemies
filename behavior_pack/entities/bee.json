@@ -745,10 +745,10 @@
         }
       },
       "minecraft:exited_disturbed_hive": {
-        "add": {
+        "remove": {
           "component_groups": ["take_nearest_target"]
         },
-        "remove": {
+        "add": {
           "component_groups": [
             "find_hive",
             "return_to_home",
@@ -771,10 +771,10 @@
               "operator": "!=",
               "value": "pacified"
             },
-            "add": {
+            "remove": {
               "component_groups": ["take_nearest_target"]
             },
-            "remove": {
+            "add": {
               "component_groups": ["escape_fire"]
             }
           }
