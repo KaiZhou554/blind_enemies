@@ -746,16 +746,17 @@
       },
       "minecraft:exited_disturbed_hive": {
         "remove": {
-          "component_groups": ["take_nearest_target"]
+          "component_groups": [
+            "has_nectar",
+            "take_nearest_target",
+            "escape_fire",
+            "return_to_home"
+          ]
         },
         "add": {
           "component_groups": [
             "find_hive",
-            "return_to_home",
-            "has_nectar",
-            "abort_shelter_detection",
-            "shelter_detection",
-            "escape_fire"
+            "shelter_detection"
           ]
         },
         "set_property": {
@@ -773,9 +774,6 @@
             },
             "remove": {
               "component_groups": ["take_nearest_target"]
-            },
-            "add": {
-              "component_groups": ["escape_fire"]
             }
           }
         ]
