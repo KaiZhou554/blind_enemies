@@ -4,7 +4,7 @@
     "name": "Blind Enemies",
     "description": "ONLY FOR MCBE V26 https://github.com/KaiZhou554/blind_enemies",
     "uuid": "dbb04155-d617-490e-ac0e-e3cf42c96cc4",
-    "version": [26, 2, 5],
+    "version": [26, 3, 3],
     "min_engine_version": [1, 26, 0]
   },
   "modules": [

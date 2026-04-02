@@ -49,12 +49,18 @@
         }
       },
       "minecraft:pig_zombie_angry": {
-
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcast_anger": true,
+          "broadcast_range": 20,
+          "broadcast_anger_when_dying": false,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        }
       },
       "minecraft:pig_zombie_calm": {
-        "minecraft:on_target_acquired": {
-
-        }
       },
       "minecraft:strider_jockey": {
         "minecraft:equipment": {
@@ -400,14 +406,6 @@
           }
         ]
       },
-      "minecraft:behavior.hurt_by_target": {
-        "priority": 1,
-        "entity_types": [
-          {
-            "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" }
-          }
-        ]
-      },
       "minecraft:behavior.mount_pathing": {
         "priority": 2,
         "speed_multiplier": 1.25,
@@ -416,28 +414,6 @@
       },
       "minecraft:behavior.equip_item": {
         "priority": 3
-      },
-      "minecraft:behavior.use_kinetic_weapon": {
-        "priority": 4,
-        "track_target": true,
-        "approach_distance": 10.0,
-        "reposition_distance": {
-          "min": 6.0,
-          "max": 7.0
-        },
-        "cooldown_distance": {
-          "min": 9.0,
-          "max": 11.0
-        },
-        "weapon_reach_multiplier": 0.5,
-        "weapon_min_speed_multiplier": 0.2,
-        "speed_multiplier": 1.5,
-        "cooldown_speed_multiplier": 1.5,
-        "hijack_mount_navigation": true
-      },
-      "minecraft:behavior.melee_box_attack": {
-        "priority": 5,
-        "speed_multiplier": 1.5
       },
       "minecraft:behavior.stomp_turtle_egg": {
         "priority": 6,
@@ -557,7 +533,16 @@
         }
       },
       "minecraft:become_angry": {
-
+        "remove": {
+          "component_groups": [
+            "minecraft:pig_zombie_calm"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pig_zombie_angry"
+          ]
+        }
       },
       "minecraft:spawn_as_strider_jockey": {
         "add": {
